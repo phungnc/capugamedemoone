@@ -1,13 +1,11 @@
- <?php
+<?php
   ob_start();
   require 'server/fb-php-sdk/facebook.php';
-
    $app_id = '526993250652302';
    $app_secret = 'a05b1c75522f0eea1e1d3ac2ab4f263b';
    $app_namespace = 'capugamedemoone';
    $app_url = 'https://apps.facebook.com/' . $app_namespace . '/';
    $scope = 'email,publish_actions';
-
    // Init the Facebook SDK
    $facebook = new Facebook(array(
      'appId'  => $app_id,
