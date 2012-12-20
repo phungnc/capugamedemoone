@@ -1,4 +1,4 @@
- <?php
+<!--
 /**
 * Copyright 2012 Facebook, Inc.
 *
@@ -21,6 +21,8 @@
 * DEALINGS IN THE SOFTWARE.
 * 20/12/2012
 */
+-->
+ <?php
   require 'server/fb-php-sdk/facebook.php';
 
    $app_id = '526993250652302';
@@ -58,10 +60,10 @@
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta property="og:image" content="http://www.mattwkelly.com/html5/critical-mass/critical_mass.png"/>
+  <meta property="og:image" content=""/>
 
   <link href="client/style.css" rel="stylesheet" type="text/css">
-  <link rel="apple-touch-icon" href="http://www.mattwkelly.com/html5/critical-mass/critical_mass.png" />
+  <link rel="apple-touch-icon" href="" />
 </head>
 
 <body ontouchmove="BlockMove(event);">
