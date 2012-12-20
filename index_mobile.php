@@ -61,7 +61,7 @@
     cookie: true,
   });
 
-  // Get the user's UID and first name
+  // Get the user's UID
   FB.getLoginStatus(function(response) {
     uid = response.authResponse.userID ? response.authResponse.userID : null;
   });

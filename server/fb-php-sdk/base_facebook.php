@@ -14,6 +14,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
+
 if (!function_exists('curl_init')) {
   throw new Exception('Facebook needs the CURL PHP extension.');
 }
