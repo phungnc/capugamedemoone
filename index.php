@@ -47,7 +47,6 @@
      print('<script> top.location.href=\'' . $loginUrl . '\'</script>');
    }
  ?>
-
 <!DOCTYPE html>
 
 <html>
