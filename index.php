@@ -1,35 +1,29 @@
- <?php
-  ob_start();
+<?php
+  //ob_start();
   require 'server/fb-php-sdk/facebook.php';
-
    $app_id = '526993250652302';
    $app_secret = 'a05b1c75522f0eea1e1d3ac2ab4f263b';
    $app_namespace = 'capugamedemoone';
    $app_url = 'https://apps.facebook.com/' . $app_namespace . '/';
    $scope = 'email,publish_actions';
-
    // Init the Facebook SDK
    $facebook = new Facebook(array(
      'appId'  => $app_id,
      'secret' => $app_secret,
    ));
-
    // Get the current user
    $user = $facebook->getUser();
-
    // If the user has not installed the app, redirect them to the Login Dialog
    if (!$user) {
      $loginUrl = $facebook->getLoginUrl(array(
        'scope' => $scope,
        'redirect_uri' => $app_url,
      ));
-
      print('<script> top.location.href=\'' . $loginUrl . '\'</script>');
    }
-   ob_end_flush();
+ //  ob_end_flush();
  ?>
 <!DOCTYPE html>
-
 <html>
 <head>
   <title>Critical Mass</title>
@@ -61,8 +55,7 @@
   <script src="client/ui.js"></script>
   <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
   
-<!-- initialize the JavaScript SDK -->
-  
+<!-- initialize the JavaScript SDK --> 
   <script>
     var appId = '<?php echo $facebook->getAppID() ?>';
 

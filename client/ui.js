@@ -131,11 +131,6 @@ function hideScore() {
 }
 
 function startGame() {
-	if(uid){
-		initGame();
-		displayMenu(false);
-	} else {
-		authUser();
-	}
+  initGame();
+  displayMenu(false);
 }
-
