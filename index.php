@@ -91,20 +91,20 @@
     var appId = '<?php echo $facebook->getAppID() ?>';
 
     // Initialize the JS SDK
-	//You only need to pass in your App ID, 
-	//not your App Secret, which should never be stored client side
+    //You only need to pass in your App ID, 
+    //not your App Secret, which should never be stored client side
     FB.init({
       appId: appId,
       cookie: true,
     });
-	
-	// Get the user's UID
+    
+    // Get the user's UID
     FB.getLoginStatus(function(response) {
       uid = response.authResponse.userID ? response.authResponse.userID : null;
     });
-	
-	// pop up a new window with the Login Dialog.
-	function authUser() {
+    
+    // pop up a new window with the Login Dialog.
+    function authUser() {
      FB.login(function(response) {
        uid = response.authResponse.userID ? response.authResponse.userID : null;
      }, {scope:'email,publish_actions'});
