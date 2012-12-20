@@ -23,9 +23,9 @@
 
   require 'server/fb-php-sdk/facebook.php';
 
-  $app_id = 'APP_ID';
-  $app_secret = 'APP_SECRET';
-  $app_namespace = 'criticalmasscomplete';
+  $app_id = '526993250652302';
+  $app_secret = 'a05b1c75522f0eea1e1d3ac2ab4f263b';
+  $app_namespace = 'capugamedemoone';
   $app_url = 'http://apps.facebook.com/' . $app_namespace . '/';
   $scope = 'email,publish_actions';
 
@@ -59,7 +59,6 @@
     }
   }
 ?>
-
 <!DOCTYPE html>
 
 <html>
