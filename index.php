@@ -1,5 +1,5 @@
  <?php
- ob_start();
+  ob_start();
   require 'server/fb-php-sdk/facebook.php';
 
    $app_id = '526993250652302';
@@ -26,7 +26,7 @@
 
      print('<script> top.location.href=\'' . $loginUrl . '\'</script>');
    }
-   ob_flush();
+   ob_end_flush();
  ?>
 <!DOCTYPE html>
 
