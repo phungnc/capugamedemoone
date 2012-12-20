@@ -41,7 +41,8 @@ function createMenu() {
   hideScore();
 
   createButton('play', 'startGame');
-
+  createButton('invite', 'sendInvite');
+  
   var welcomeMsgContainer = document.createElement('div');
   welcomeMsgContainer.id = 'welcome_msg_container';
   stage.appendChild(welcomeMsgContainer);
@@ -130,7 +131,11 @@ function hideScore() {
 }
 
 function startGame() {
-  initGame();
-  displayMenu(false);
+	if(uid){
+		initGame();
+		displayMenu(false);
+	} else {
+		authUser();
+	}
 }
 
